@@ -10,7 +10,8 @@ import java.util.Random;
 public class TorpedoStore {
   // rate of failing to fire torpedos [0.0, 1.0]
   private double FAILURE_RATE = 0.0; //NOSONAR
-  // ide értelmes komment a randomhoz majd a reviewnal
+  // A random class azért kell hogy lentebb véletlen double változót tudjunk létrehozni
+  // ehhez a .nextDouble() függvényt fogjuk használni
   private Random generator = new Random();
 
   private int torpedoCount = 0;
